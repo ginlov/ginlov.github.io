@@ -2,7 +2,13 @@ github_users:
   - ginlov
 
 github_repos:
-  - ginlov/SA-DPM
-  - ginlov/vae
+  - VinAIResearch/SA-DPM
   - ginlov/restir_lajolla_renderer
-  - ginlov/etl-tool-demo
+  - ginlov/dropout-diffusion
+  - ginlov/image-captioning
+  - ginlov/semantic-segmentation
+  - ginlov/vae
+  - ginlov/pix2pix
+  - ginlov/hsa
+  - ginlov/pong-game
+  - ginlov/personal-finance-management
