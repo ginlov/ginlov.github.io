@@ -6,7 +6,6 @@ subtitle: Master of Science student in Computer Science @ <a href='https://ucsd.
 
 profile:
   align: right
-  image: prof_pic.png
   image_circular: true # crops the image to make it circular
   more_info:
 
