@@ -107,6 +107,17 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
+          <!-- Photography --!>
+          <li class="nav-item {% if page.url contains '/photography' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/photography' | relative_url }}" target="_blank" rel="noopener">
+              travel
+              {% if page.url contains '/photography' %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
