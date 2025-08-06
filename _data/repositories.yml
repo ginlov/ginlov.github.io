@@ -1,14 +1,16 @@
-github_users:
-  - torvalds
-  - alshedivat
-
 repo_description_lines_max: 2
 
+github_users:
+  - ginlov
+
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - VinAIResearch/SA-DPM
+  - ginlov/restir_lajolla_renderer
+  - ginlov/dropout-diffusion
+  - ginlov/image-captioning
+  - ginlov/semantic-segmentation
+  - ginlov/vae
+  - ginlov/pix2pix
+  - ginlov/hsa
+  - ginlov/pong-game
+  - ginlov/personal-finance-management

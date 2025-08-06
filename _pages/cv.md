@@ -4,8 +4,9 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+cv_pdf: https://drive.google.com/file/d/1ku7tKvRxpeS0MGVL3AWZpAYduIur0ruS/view?usp=sharing
+description: My CV is available for download in the attachment provided.
+date: 2024-04-03
 toc:
-  sidebar: left
+  sidebar:
 ---

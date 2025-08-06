@@ -189,6 +189,12 @@ pagination:
 
   </ul>
 
+<div style="text-align: center;">
+      <div style="width: 40%; height: auto">
+      <img src="../assets/img/my_animation3.gif" alt="A cool animation" width="500">
+</div>
+</div>
+
 {% if page.pagination.enabled %}
 {% include pagination.liquid %}
 {% endif %}
