@@ -18,3 +18,9 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<div style="text-align: center;">
+    <div style="width: 40%; height: auto">
+      <img src="../assets/img/my_animation3.gif" alt="A cool animation" width="500">
+    </div>
+</div>
