@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MSCS @ <a href='https://ucsd.edu'>UCSD</a> | Software Engineer Intern @ <a href='https://woven.toyota/en/'>Woven by Toyota</a>
+subtitle: MSCS @ <a href='https://ucsd.edu'>UCSD</a> | ADAS Intern @ <a href='https://woven.toyota/en/'>Woven by Toyota</a>
 
 profile:
   align: right
