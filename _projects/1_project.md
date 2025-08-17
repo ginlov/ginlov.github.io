@@ -1,81 +1,69 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: ResTIR and ResTIR PT on La Jolla renderer
+description: a Computer Graphic Project
+img: /assets/img/posts/restir/many_lights_restir_pt/bunny_restir_pt_spp_1_depth_1_size_32_neighbor_1.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+In this project, I implemented **ReSTIR** and **ReSTIR PT** rendering algorithms from NVIDIA in the La Jolla renderer (created for teaching purposes at UCSD).  
+These two algorithms significantly improve rendering performance in complex lighting conditions:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- **ReSTIR (Reservoir-based Spatiotemporal Importance Resampling)**  
+  Instead of sampling lights independently for each pixel, ReSTIR maintains *reservoirs* of light samples that can be reused across both space (neighboring pixels) and time (previous frames).  
+  This makes it possible to render scenes with **thousands or even millions of light sources** while still producing low-noise results in just one sample per pixel (spp).
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- **ReSTIR PT (Path Tracing with ReSTIR)**  
+  Extends ReSTIR beyond direct lighting. By applying the same reservoir resampling strategy to indirect lighting paths, ReSTIR PT allows more efficient global illumination.  
+  This leads to **faster convergence and reduced noise** in scenes dominated by multiple light bounces, where traditional path tracing struggles.
+
+Together, these methods make physically-based rendering feasible in real time, even for scenes with dense lighting and complex visibility.
+
+### Example Results
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/path_depth_2.png" title="Path Tracer" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/final/restir_neighbor_1_spp_1.png" title="ReSTIR" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/many_lights_restir_pt/monkey_restir_pt_spp_1_size_32_depth_1_neighbor_1.png" title="ReSTIR PT" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/bunny_restir/path_tracer_spp_1_depth_1.png" title="Path Tracer" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/bunny_restir/restir_spp_1_size_32_neighbor_1.png" title="ReSTIR" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/posts/restir/many_lights_restir_pt/bunny_restir_pt_spp_1_depth_1_size_32_neighbor_1.png" title="ReSTIR PT" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+**Figure:** Image rendered from two scenes by **Path Tracer** (first column), **ReSTIR** (second column), and **ReSTIR PT** (last column).
+
+---
+
+### Resources
+- 📂 [GitHub Repository](https://github.com/your-username/your-repo)  
+- 📑 [Full Report (PDF)](https://ginlov.github.io/assets/pdf/cse272_report.pdf)
+
+---
+
+### References
+- Bitterli, B., Speierer, S., Wrenninge, M., Shirley, P., & Keller, A. (2020).  
+  *Spatiotemporal reservoir resampling for real-time ray tracing with dynamic direct lighting.*  
+  ACM Transactions on Graphics (SIGGRAPH). [Paper link](https://research.nvidia.com/labs/rtr/Restir/)  
+
+- Müller, T., Keller, A., & Wrenninge, M. (2021).  
+  *ReSTIR Path Tracing.*  
+  ACM Transactions on Graphics (SIGGRAPH). [Paper link](https://research.nvidia.com/publication/2021-07_ReSTIR-PT)  
+
+- [La Jolla Renderer](https://github.com/BachiLi/lajolla_public) – teaching renderer developed at UCSD.
