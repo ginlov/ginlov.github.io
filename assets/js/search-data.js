@@ -62,6 +62,11 @@ ninja.data = [{
           description: "a Computer Graphic Project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-improving-ego-vehicle-performance-with-grpo",
+          title: 'Improving Ego Vehicle Performance with GRPO',
+          description: "an Autonomous Driving Project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-email',
         title: 'email',
