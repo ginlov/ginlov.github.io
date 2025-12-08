@@ -118,6 +118,17 @@
             {% endif %}
           {% endfor %}
 
+          <!-- cvrunner --!>
+          <li class="nav-item {% if page.url contains '/cvrunner' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/cvrunner' | relative_url }}" target="_blank" rel="noopener">
+              cvrunner
+              {% if page.url contains '/cvrunner' %}
+                <span class="sr-only">(current)</span>
+              {% endif %}
+            </a>
+          </li>
+
+
           <!-- Photography --!>
           <li class="nav-item {% if page.url contains '/photography' %}active{% endif %}">
             <a class="nav-link" href="{{ '/photography' | relative_url }}" target="_blank" rel="noopener">

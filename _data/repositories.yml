@@ -4,13 +4,10 @@ github_users:
   - ginlov
 
 github_repos:
+  - ginlov/wayformer
+  - ginlov/cvrunner
   - VinAIResearch/SA-DPM
   - ginlov/restir_lajolla_renderer
   - ginlov/dropout-diffusion
   - ginlov/image-captioning
-  - ginlov/semantic-segmentation
   - ginlov/vae
-  - ginlov/pix2pix
-  - ginlov/hsa
-  - ginlov/pong-game
-  - ginlov/personal-finance-management
