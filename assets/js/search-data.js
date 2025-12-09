@@ -50,13 +50,13 @@ ninja.data = [{
           section: "News",},{id: "news-smile-i-am-very-glad-to-start-a-new-role-as-a-software-engineer-intern-at-woven-by-toyota-this-summer",
           title: ':smile: I am very glad to start a new role as a software...',
           description: "",
-          section: "News",},{id: "projects-restir-and-restir-pt-on-la-jolla-renderer",
-          title: 'ResTIR and ResTIR PT on La Jolla renderer',
+          section: "News",},{id: "projects-cse272-restir-and-restir-pt-on-la-jolla-renderer",
+          title: 'CSE272-ResTIR and ResTIR PT on La Jolla renderer',
           description: "a Computer Graphic Project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-improving-ego-vehicle-performance-with-grpo",
-          title: 'Improving Ego Vehicle Performance with GRPO',
+            },},{id: "projects-ds190-improving-ego-vehicle-performance-with-grpo",
+          title: 'DS190-Improving Ego Vehicle Performance with GRPO',
           description: "an Autonomous Driving Project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
