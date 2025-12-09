@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ResTIR and ResTIR PT on La Jolla renderer
+title: CSE272-ResTIR and ResTIR PT on La Jolla renderer
 description: a Computer Graphic Project
 img: /assets/img/posts/restir/many_lights_restir_pt/bunny_restir_pt_spp_1_depth_1_size_32_neighbor_1.png
 importance: 1

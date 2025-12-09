@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Improving Ego Vehicle Performance with GRPO
+title: DS190-Improving Ego Vehicle Performance with GRPO
 description: an Autonomous Driving Project
 img: /assets/img/posts/wayformer_grpo/safety_imitation_tradeoff.png
 importance: 1
