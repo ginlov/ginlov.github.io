@@ -52,7 +52,7 @@ Together, these methods make physically-based rendering feasible in real time, e
 ---
 
 ### Resources
-- 📂 [GitHub Repository](https://github.com/your-username/your-repo)  
+- 📂 [GitHub Repository](https://github.com/ginlov/restir_lajolla_renderer)  
 - 📑 [Full Report (PDF)](https://ginlov.github.io/assets/pdf/cse272_report.pdf)
 
 ---
