@@ -60,6 +60,11 @@ ninja.data = [{
           description: "an Autonomous Driving Project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-mae148-autonomous-car-project",
+          title: 'MAE148-Autonomous Car Project',
+          description: "an Autonomous Driving Project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-email',
         title: 'email',
