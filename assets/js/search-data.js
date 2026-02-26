@@ -65,6 +65,11 @@ ninja.data = [{
           description: "an Autonomous Driving Project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-cvrunner-a-runner-for-cv-models",
+          title: 'CVRunner - A Runner for CV Models',
+          description: "a Deep Learning Infrastructure Project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
