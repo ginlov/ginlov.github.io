@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-6-30
+date: 2026-3-14
 inline: true
 related_posts: false
 ---
 
-:smile: I am very glad to start a new role as a software engineer intern at **Woven by Toyota** this summer.
+:sparkles: I’m thrilled to be returning to **Woven by Toyota** this April as a Machine Learning Engineer.
