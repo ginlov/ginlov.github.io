@@ -2,7 +2,7 @@
 layout: page
 title: MAE204 — Mobile Manipulation with the youBot
 description: Feedforward + PI task-space control for pick-and-place on a mobile manipulator
-img: assets/img/posts/mae204/best_xerr.png
+img: assets/img/posts/mae204/project_thumb.png
 importance: 4
 category: work
 related_publications: false
