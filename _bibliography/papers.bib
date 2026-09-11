@@ -45,3 +45,13 @@ networks, pretrained from ImageNet.},
     url={https://arxiv.org/abs/2412.06381},
     pdf={https://arxiv.org/abs/2412.06381.pdf}
 }
+
+@article{vu2026anchor,
+    author = {Vu*, Giang and Yao*, Chengkai and Liu, Yuxin and FNU, Aryan and Chandrashekar Aralikatti, Rajath},
+    abbr= {B4N IROS},
+    abstract = {Vision-Language Navigation (VLN) in previously unseen indoor environments is useful in real-world robotics, where an agent must follow natural-language instructions, locate referred objects, and answer spatial questions without a pre-built map or a fixed object vocabulary. Recently, multimodal vision- language models (VLMs) have shown strong open-vocabulary grounding and zero-shot reasoning, making them a natural semantic front-end for such agents. One common problem is these VLMs’ inability to emit reliable metric quantities such as range, bearing, and comparative spatial relations directly from images. Existing approaches address this by folding geometry into a hand-engineered pipeline, or by asking the model to output waypoints; both require rewriting the control stack for each new robot, task, or vocabulary, which does not scale. This work designs AnchorVLN, an open-vocabulary VLN system built on a single rule (the VLM proposes semantics; geometry decides metrics), realised as EMBODIED-NAV-MCP, a Model Context Protocol (MCP) server that a VLM agent drives at inference time through a compact set of callable tools. Because no tool accepts a distance in metres or a bearing in radians, the schema itself enforces the boundary between semantics and geometry without rewriting the downstream autonomy stack. We benchmark the server on both tasks of the CMU Vision-Language Navigation Challenge 2026: all 30 instruction-following questions over 15 scenes, and a frozen 45-question object-reference set on the same scenes. The full system achieves 64.4\% on instruction following, dropping by 13.3 percentage points without controller modeling (t = 2.77, paired over questions). On object reference, geometric anchoring clears the challenge’s overlap threshold on 10 of 45 questions (versus 0 of 45 for direct model coordinate estimation), reducing median center error from 3.37 m to 2.48 m.},
+    title = {AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation},
+    journal = {Bridge4Navigation IROS},
+    year = {2026},
+    selected={true},
+}
